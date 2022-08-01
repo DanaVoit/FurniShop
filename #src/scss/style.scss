@@ -1,0 +1,24 @@
+@import "var";
+@import "reset.scss";
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	color: #999;
+	background: #fcfbf9;
+
+	}
+
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 50px ;
+    padding-right: 50px;
+    
+	&--section{
+		max-width: 950px;
+	
+		}
+    
+    }
