@@ -16,7 +16,8 @@
     "gulp-file-include": "^2.3.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
-    "imagemin": "^7.0.1"
+    "imagemin": "^7.0.1",
+    "webp-converter": "^2.2.3"
   },
   "dependencies": {
     "gulp-webp": "^4.0.1",

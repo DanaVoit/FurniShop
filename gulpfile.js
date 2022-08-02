@@ -83,8 +83,6 @@ function  images() {
         .pipe(
             imagemin({
                 progressive: true,
-                svgoPlugins: [{ removeViewBox: false}],
-                interlaced: true,
                 optimizationLevel: 1
             })
         )

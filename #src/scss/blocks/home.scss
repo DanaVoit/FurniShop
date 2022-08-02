@@ -1,0 +1,81 @@
+.home{
+    background: url(../img/home/modern-living-room-interior-2021-09-02-08-41-17-utc.jpg)center no-repeat ;
+    background-size: cover ;
+
+    justify-content: center;
+    text-align: center;
+    padding-top: 210px;
+
+    &-inner{
+        padding:0 276px;
+    }
+
+    &-title{
+        color:$white;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 120%;
+
+        text-align: center;
+        text-transform: capitalize;
+
+        margin-bottom: 30px;
+    }
+
+     &-info{
+            color:$white;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.01em;
+
+            margin-bottom: 65px;
+            padding: 0 55px;
+        }
+
+}
+
+.btn{
+    background: rgba(226, 226, 226, 0.4);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+
+    padding: 16px 80px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color:$white;
+
+    letter-spacing: 0.01em;
+
+    border: none;
+}
+
+.home-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:$white;
+
+    background-color: $accent;
+    border-radius: 20px;
+
+    margin-top: 100px;
+
+    &-item{
+        padding: 38px 85px ;
+        position: relative;
+        &-number{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 120%;
+            margin-bottom: 5px;
+        }
+        &-dscrpt{
+            font-weight: 400;
+            font-size: 20px;
+
+        }
+    }
+}

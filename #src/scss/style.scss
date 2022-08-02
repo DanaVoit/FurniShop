@@ -2,23 +2,30 @@
 @import "reset.scss";
 
 body {
-	font-family: "Roboto", sans-serif;
-	font-size: 1.4rem;
-	line-height: 1.5;
-	color: #999;
-	background: #fcfbf9;
+	font-family: 'Saira', sans-serif;
+	font-size: 14px;
+	color: $primary;
+	background: $white;
 
 	}
 
  .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 50px ;
-    padding-right: 50px;
-    
-	&--section{
-		max-width: 950px;
-	
-		}
-    
+    padding-left: 100px ;
+    padding-right: 100px;
+   
     }
+
+	ul,ol{
+		list-style: none;
+	}
+
+	a{
+		text-decoration: none;
+		color:inherit;
+	}
+
+
+	@import "blocks/header";
+	@import "blocks/home";

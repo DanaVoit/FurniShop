@@ -1,0 +1,42 @@
+.header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 44px;
+    
+}
+
+.header-logo{
+    color:$white;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 57px;
+}
+
+.header-nav-links-menu{
+    display: flex;
+
+}
+
+.header-nav-links{
+    color:$white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-right: 65px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:hover{
+        font-weight: 600;
+    }
+}
