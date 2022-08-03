@@ -5,6 +5,9 @@
     justify-content: center;
     text-align: center;
     padding-top: 210px;
+    padding-bottom: 25px;
+
+    width: 100%;
 
     &-inner{
         padding:0 276px;
@@ -50,6 +53,11 @@
     letter-spacing: 0.01em;
 
     border: none;
+
+    &:hover,:focus{
+        font-weight: 700;
+        background: rgba(226, 226, 226, 0.6);
+    }
 }
 
 .home-table{
@@ -61,21 +69,32 @@
     background-color: $accent;
     border-radius: 20px;
 
-    margin-top: 100px;
+    margin-top: 75px;
 
     &-item{
-        padding: 38px 85px ;
+        padding: 38px 60px ;
         position: relative;
+      
+        border-right: 1px solid $white;
+
+        &:last-child{
+           border-right: 0;
+        }
+
         &-number{
             font-weight: 600;
-            font-size: 40px;
             line-height: 120%;
             margin-bottom: 5px;
+            font-size: 35px;
+           
         }
+
         &-dscrpt{
             font-weight: 400;
-            font-size: 20px;
+            line-height: 130%;
+            font-size: 16px;
 
         }
     }
 }
+
