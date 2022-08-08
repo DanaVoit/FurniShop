@@ -1,0 +1,57 @@
+.mails{
+    background-color: $accent;
+    flex-direction: column;
+    z-index: 5;
+    
+}
+.mails-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mails-img-light img{
+    background-color: #ffff;
+}
+ 
+
+.mails-title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 135%;
+    color:$white;
+    margin-bottom: 20px;
+}
+
+.mails-txt{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color:$white;
+    margin-bottom: 40px;
+}
+
+.mails-write{
+    padding: 22px 220px 22px 22px;
+    background-color: $white;
+    border-radius: 8px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color:$primary;
+    margin-right: 22px;
+    border: 0;
+}
+
+.mails-btn{
+    padding: 20px 30px;
+    color:$white;
+    background-color: $primary;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    border: 0;
+    
+}

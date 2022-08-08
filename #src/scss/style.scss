@@ -1,6 +1,8 @@
 @import "var";
 @import "reset.scss";
 
+
+
 body {
 	font-family: 'Saira', sans-serif;
 	font-size: 14px;
@@ -31,3 +33,11 @@ body {
 	@import "blocks/header";
 	@import "blocks/home";
 	@import "blocks/cart";
+	@import "blocks/coments";
+	@import "blocks/mail";
+
+	@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+	@import "./node_modules/@fortawesome/fontawesome-free/scss/brands";
+	@import "./node_modules/@fortawesome/fontawesome-free/scss/regular";
+	@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
+	@import "./node_modules/@fortawesome/fontawesome-free/scss/v4-shims";

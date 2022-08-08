@@ -1,3 +1,4 @@
+//Cart
 .cart-header{
     text-align: center;
     align-items: center;
@@ -33,12 +34,13 @@
     &-item{
         margin-bottom: 60px;
         max-width: 290px;
+        position: relative;
 
         & img{
             border-radius: 20px;
             border: 1px solid rgba(16, 38, 55, 0.1);
             background-color: $white;
-
+            
         }
 
         &-title{
@@ -60,11 +62,22 @@
             }
         }
 
+        &-plus{
+           font-size: 24px;
+           line-height: 150%;
+           border-radius: 50%;
+           background-color: $secondary;
+           padding: 4px 14px;
+           cursor: pointer;
+           position: absolute;
+           bottom: 99px;
+           right: 14px;
+            &:hover{
+                color: opacify($color: $accent, $amount: 0.2);
+            }
+        }
+
     }
 
-    
 }
 
-.under{
-    text-decoration: line-through   ;
-}
