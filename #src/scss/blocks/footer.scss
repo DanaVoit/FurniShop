@@ -2,11 +2,15 @@
     padding: 65px 0 20px 0;
     background-color: $primary;
     color:$white;
+
+   
 }
 
 .footer-inner{
     display: flex;
     flex-direction: column;
+
+   
 }
 
 .footer-header{
@@ -15,6 +19,11 @@
     justify-content: space-between;
     padding-bottom: 60px;
     border-bottom: 1px solid $secondary;
+
+    @include breakpoint ($mobile-bp) {
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
 }
 
 .footer-logo{
@@ -22,6 +31,10 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.075px;
+
+    @include breakpoint ($mobile-bp) {
+        margin-bottom: 20px;
+      }
 }
 
 .footer-social{
@@ -66,6 +79,11 @@
         text-transform: capitalize;
         margin-bottom: 10px;
     }
+
+    @include breakpoint ($mobile-bp) {
+        display: none;
+      }
+
 }
 
 .footer-author{

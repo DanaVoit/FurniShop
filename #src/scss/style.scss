@@ -16,11 +16,20 @@ body {
     margin: 0 auto;
     padding-left: 100px ;
     padding-right: 100px;
+
+	@include breakpoint ($mobile-bp) {
+        padding-left: 25px ;
+    	padding-right: 25px;
+    }
    
     }
 
 	.section{
 		padding: 70px 0;
+
+		@include breakpoint ($mobile-bp) {
+			padding: 50px 0;
+		}
 	}
 
 
@@ -28,6 +37,12 @@ body {
 		text-decoration: none;
 		color:inherit;
 	}
+
+	.fa,.fas,.far,.fal,.fab, .fa-solid {
+		font-family: "Font Awesome 6 Free";
+   		 font-weight: 900;
+	}
+	
 
 
 	@import "blocks/header";
@@ -42,3 +57,4 @@ body {
 	@import "./node_modules/@fortawesome/fontawesome-free/scss/regular";
 	@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
 	@import "./node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+	

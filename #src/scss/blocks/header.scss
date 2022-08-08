@@ -2,6 +2,8 @@
     position: absolute;
     left: 0;
     right: 0;
+
+  
     
 }
 
@@ -12,6 +14,8 @@
     margin-top: 44px;
 
     align-items: center;
+
+   
     
 }
 
@@ -20,6 +24,12 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 57px;
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 30px;
+        left: 0;
+    }
+    
 }
 
 .header-nav-links-menu{
@@ -40,5 +50,9 @@
 
     &:hover{
         font-weight: 600;
+    }
+
+     @include breakpoint ($tablet-bp) {
+        display: none;
     }
 }

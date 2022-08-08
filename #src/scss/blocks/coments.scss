@@ -3,12 +3,30 @@
     flex-direction: row;
     justify-content: space-between;
 
+
+    @include breakpoint ($tablet-bp) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img{
+        @include breakpoint ($mobile-bp) {
+           display: none;
+          }
+    }
+     
+
     &-title{
         font-weight: 600;
         font-size: 37px;
         line-height: 130%;
         text-transform: capitalize;
         margin-bottom: 55px;
+
+        @include breakpoint ($mobile-bp) {
+            font-size: 20px;
+          }
     }
 }
 .comments-personification-info{
@@ -18,26 +36,35 @@
 
     }
 
-    .comments-personification{
+.comments-personification{
+
         &-name{
             font-weight: 600;
             font-size: 20px;
             line-height: 100%;
             margin-bottom: 12px;
+
+            @include breakpoint ($mobile-bp) {
+               font-size: 18px;
+               }
         }
 
         &-prof{
             font-weight: 400;
-        font-size: 14px;
-        line-height: 100%;
-        color: opacify($color: #23262F, $amount: 0.5)
+            font-size: 14px;
+            line-height: 100%;
+            color: opacify($color: #23262F, $amount: 0.5)
         }
+
     }
    
 
-
 .comments-personification-about{
    margin-left: 20px;
+
+   @include breakpoint ($mobile-bp) {
+   margin-left: 0;
+   }
 }
 
 .comments-text{
@@ -46,6 +73,12 @@
     font-size: 20px;
     line-height: 170%;
     width: 570px;
+
+    @include breakpoint ($mobile-bp) {
+        width: 300px;
+        font-size: 14px;
+       }
+
 }
 
 .comments-slider-item i {
@@ -59,9 +92,29 @@
     margin-right: 35px;
     cursor: pointer;
 
+
+    @include breakpoint ($mobile-bp) {
+       font-size: 20px;
+
+       padding: 9px 13px;
+       }
+
+
+
+
 &:hover{
     background: $accent;
     box-shadow: 0px 4px 10px rgba(15, 27, 51, 0.05);
     color:$white;
 }
+}
+
+.comments-slider{
+
+    @include breakpoint ($tablet-bp) {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
 }

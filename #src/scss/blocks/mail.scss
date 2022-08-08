@@ -2,14 +2,23 @@
     background-color: $accent;
     flex-direction: column;
     z-index: 5;
+  
     
 }
+
 .mails-inner{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  
 }
+.mails-img-light img {
+    margin-top: -69px;
 
+    @include breakpoint ($tablet-bp) {
+        display: none;
+    }
+}
 
 .mails-title{
     font-weight: 600;
@@ -17,6 +26,10 @@
     line-height: 135%;
     color:$white;
     margin-bottom: 20px;
+
+    @include breakpoint ($tablet-bp) {
+       font-size: 28px;
+    }
 }
 
 .mails-txt{
@@ -25,6 +38,10 @@
     line-height: 100%;
     color:$white;
     margin-bottom: 40px;
+
+    @include breakpoint ($tablet-bp) {
+        font-size: 18px;
+     }
 }
 
 .mails-write{
@@ -38,7 +55,16 @@
     color:$primary;
     margin-right: 22px;
     border: 0;
+
+    @include breakpoint ($tablet-bp) {
+      margin-bottom: 20px;
+     }
+
+       @include breakpoint ($mobile-bp) {
+     padding-right: 100px;
+     }
 }
+
 
 .mails-btn{
     padding: 20px 30px;
@@ -49,5 +75,14 @@
     font-size: 20px;
     line-height: 100%;
     border: 0;
-    
+
+    &:hover{
+        border: 2px solid $secondary;
+        padding: 18px 28px;
+    }
+
+    @include breakpoint ($tablet-bp) {
+        font-size: 16px;
+     }
+ 
 }

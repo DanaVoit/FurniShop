@@ -11,6 +11,13 @@
 
     &-inner{
         padding:0 276px;
+        @include breakpoint ($tablet-bp) {
+            padding:0 182px;
+        }
+
+        @include breakpoint ($mobile-bp) {
+            padding:0 15px;
+        }
     }
 
     &-title{
@@ -23,6 +30,15 @@
         text-transform: capitalize;
 
         margin-bottom: 30px;
+
+        @include breakpoint ($tablet-bp) {
+            font-size: 48px;
+          
+        }
+
+        @include breakpoint ($mobile-bp) {
+            font-size: 36px;
+        }
     }
 
      &-info{
@@ -34,6 +50,17 @@
 
             margin-bottom: 65px;
             padding: 0 55px;
+
+            @include breakpoint ($tablet-bp) {
+                padding:0 15px;
+
+                margin-bottom: 40px;
+            }
+
+            @include breakpoint ($mobile-bp) {
+                font-size: 16px;
+            }
+            
         }
 
 }
@@ -58,6 +85,13 @@
         font-weight: 700;
         background: rgba(226, 226, 226, 0.6);
     }
+
+
+    @include breakpoint ($mobile-bp) {
+        padding: 10px 50px;
+        font-size: 17px;
+    }
+
 }
 
 .home-table{
@@ -95,6 +129,10 @@
             font-size: 16px;
 
         }
+    }
+
+    @include breakpoint ($big-screen-bp) {
+        display: none;
     }
 }
 

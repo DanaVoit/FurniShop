@@ -20,8 +20,18 @@
         line-height: 165%;
 
         padding: 0 260px;
+
+        @include breakpoint ($tablet-bp) {
+           padding: 0 85px;
+        }
        
+        @include breakpoint ($mobile-bp) {
+            padding: 0 45px;
+         }
     }
+
+    
+   
 }
 
 .cart{
@@ -29,17 +39,35 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include breakpoint ($tablet-bp) {
+       justify-content: space-around;
+     }
+
+     @include breakpoint ($mobile-bp) {
+        justify-content: center;
+      }
+    
     
 
     &-item{
         margin-bottom: 60px;
-        max-width: 290px;
         position: relative;
+
+        @include breakpoint ($mobile-bp) {
+            width: 165px;
+           }
 
         & img{
             border-radius: 20px;
             border: 1px solid rgba(16, 38, 55, 0.1);
             background-color: $white;
+
+            @include breakpoint ($mobile-bp) {
+                width: 155px;
+               }
+
+           
             
         }
 
@@ -75,7 +103,14 @@
             &:hover{
                 color: opacify($color: $accent, $amount: 0.2);
             }
+
+            @include breakpoint ($mobile-bp) {
+               display: none;
+               }
         }
+
+
+       
 
     }
 
