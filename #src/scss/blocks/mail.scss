@@ -1,9 +1,9 @@
+//mails
 .mails{
     background-color: $accent;
     flex-direction: column;
     z-index: 5;
-  
-    
+ 
 }
 
 .mails-inner{
@@ -56,12 +56,16 @@
     margin-right: 22px;
     border: 0;
 
+        &:focus{
+            border: 1px solid $white
+        }
+
     @include breakpoint ($tablet-bp) {
       margin-bottom: 20px;
      }
 
        @include breakpoint ($mobile-bp) {
-     padding-right: 100px;
+     padding-right: 80px;
      }
 }
 
@@ -76,10 +80,10 @@
     line-height: 100%;
     border: 0;
 
-    &:hover{
-        border: 2px solid $secondary;
-        padding: 18px 28px;
-    }
+        &:hover{
+            border: 2px solid $secondary;
+            padding: 18px 28px;
+        }
 
     @include breakpoint ($tablet-bp) {
         font-size: 16px;

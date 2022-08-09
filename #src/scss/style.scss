@@ -38,10 +38,11 @@ body {
 		color:inherit;
 	}
 
-	.fa,.fas,.far,.fal,.fab, .fa-solid {
-		font-family: "Font Awesome 6 Free";
-   		 font-weight: 900;
+	i{
+		font-family: 'Font-Aswe'
 	}
+
+
 	
 
 
@@ -52,9 +53,5 @@ body {
 	@import "blocks/mail";
 	@import "blocks/footer";
 
-	@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-	@import "./node_modules/@fortawesome/fontawesome-free/scss/brands";
-	@import "./node_modules/@fortawesome/fontawesome-free/scss/regular";
-	@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
-	@import "./node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
 	

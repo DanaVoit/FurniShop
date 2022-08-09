@@ -1,3 +1,4 @@
+//Home
 .home{
     background: url(../img/home/modern-living-room-interior-2021-09-02-08-41-17-utc.jpg)center no-repeat ;
     background-size: cover ;
@@ -9,59 +10,59 @@
 
     width: 100%;
 
-    &-inner{
-        padding:0 276px;
-        @include breakpoint ($tablet-bp) {
-            padding:0 182px;
-        }
-
-        @include breakpoint ($mobile-bp) {
-            padding:0 15px;
-        }
-    }
-
-    &-title{
-        color:$white;
-        font-weight: 600;
-        font-size: 64px;
-        line-height: 120%;
-
-        text-align: center;
-        text-transform: capitalize;
-
-        margin-bottom: 30px;
-
-        @include breakpoint ($tablet-bp) {
-            font-size: 48px;
-          
-        }
-
-        @include breakpoint ($mobile-bp) {
-            font-size: 36px;
-        }
-    }
-
-     &-info{
-            color:$white;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 150%;
-            letter-spacing: 0.01em;
-
-            margin-bottom: 65px;
-            padding: 0 55px;
-
+        &-inner{
+            padding:0 276px;
             @include breakpoint ($tablet-bp) {
-                padding:0 15px;
-
-                margin-bottom: 40px;
+                padding:0 182px;
             }
 
             @include breakpoint ($mobile-bp) {
-                font-size: 16px;
+                padding:0 15px;
             }
-            
         }
+
+        &-title{
+            color:$white;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 120%;
+
+            text-align: center;
+            text-transform: capitalize;
+
+            margin-bottom: 30px;
+
+            @include breakpoint ($tablet-bp) {
+                font-size: 48px;
+            
+            }
+
+            @include breakpoint ($mobile-bp) {
+                font-size: 36px;
+            }
+        }
+
+        &-info{
+                color:$white;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                letter-spacing: 0.01em;
+
+                margin-bottom: 65px;
+                padding: 0 55px;
+
+                @include breakpoint ($tablet-bp) {
+                    padding:0 15px;
+
+                    margin-bottom: 40px;
+                }
+
+                @include breakpoint ($mobile-bp) {
+                    font-size: 16px;
+                }
+                
+            }
 
 }
 
@@ -81,10 +82,10 @@
 
     border: none;
 
-    &:hover,:focus{
-        font-weight: 700;
-        background: rgba(226, 226, 226, 0.6);
-    }
+        &:hover,:focus{
+            font-weight: 700;
+            background: rgba(226, 226, 226, 0.6);
+        }
 
 
     @include breakpoint ($mobile-bp) {
@@ -105,30 +106,30 @@
 
     margin-top: 75px;
 
-    &-item{
-        padding: 38px 60px ;
-        position: relative;
-      
-        border-right: 1px solid $white;
+        &-item{
+            padding: 38px 60px ;
+            position: relative;
+        
+            border-right: 1px solid $white;
 
-        &:last-child{
-           border-right: 0;
-        }
+            &:last-child{
+            border-right: 0;
+            }
 
-        &-number{
-            font-weight: 600;
-            line-height: 120%;
-            margin-bottom: 5px;
-            font-size: 35px;
-           
-        }
+            &-number{
+                font-weight: 600;
+                line-height: 120%;
+                margin-bottom: 5px;
+                font-size: 35px;
+            
+            }
 
-        &-dscrpt{
-            font-weight: 400;
-            line-height: 130%;
-            font-size: 16px;
+            &-dscrpt{
+                font-weight: 400;
+                line-height: 130%;
+                font-size: 16px;
 
-        }
+            }
     }
 
     @include breakpoint ($big-screen-bp) {

@@ -4,7 +4,7 @@ let source_folder = "#src";
 let path ={
     build:{
         html: project_folder + "/",
-        css: project_folder + "/css/",
+        css: project_folder + "/css/" ,
         js: project_folder + "/js/",
         img: project_folder + "/img/",
         fonts: project_folder + "/fonts/", 
@@ -14,7 +14,7 @@ let path ={
         css: source_folder + "/scss/style.scss" ,
         js: source_folder + "/js/script.js",
         img: source_folder + "/img/**/*.+(png|jpg|gif|ico|svg|webp)",
-        fonts: source_folder + "/fonts/.ttf",
+        fonts: source_folder + "/fonts/fontawesome-free/**/*",
     },
 
     watch: {
@@ -89,6 +89,12 @@ function  images() {
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
 }
+function fonts() {
+    return src(path.src.fonts)
+        .pipe(dest(path.build.fonts))
+        .pipe(browsersync.stream())
+}
+
 
 
 function watchFiles(params){
@@ -105,10 +111,11 @@ function clean(params){
 }
 
 
-let build = gulp.series(clean, gulp.parallel( images, js, css, html,));
+let build = gulp.series(clean, gulp.parallel( images, fonts, js, css, html,));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.images = images;
+exports.fonts = fonts;
 exports.js = js;
 exports.css = css;
 exports.html = html;

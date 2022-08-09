@@ -1,19 +1,19 @@
+//Comments
 .comments{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-
-    @include breakpoint ($tablet-bp) {
+    @include breakpoint ($big-screen-bp) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
 
-      img{
-        @include breakpoint ($mobile-bp) {
-           display: none;
-          }
+        img{
+            @include breakpoint ($mobile-bp) {
+            display: none;
+            }
     }
      
 
@@ -37,7 +37,6 @@
     }
 
 .comments-personification{
-
         &-name{
             font-weight: 600;
             font-size: 20px;
@@ -82,7 +81,7 @@
 }
 
 .comments-slider-item i {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
     border-radius: 50%;
     background: $white;
@@ -98,8 +97,6 @@
 
        padding: 9px 13px;
        }
-
-
 
 
 &:hover{
